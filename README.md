@@ -5,3 +5,13 @@ Execute project
 
 - git clone https://github.com/Ksgalo/web-scraping-python
 - cd web-scraping-python/ && sh version.sh
+
+
+RUTAS
+
+-Agregar dominios
+Produccion
+/var/lib/docker/volumes/v1/_data/prod.txt
+QA
+/var/lib/docker/volumes/v1/_data/qa.txt
+
