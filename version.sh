@@ -3,7 +3,7 @@
 DOMINIOPROD=kev2110/pythonprod:v1.0
 DOMINIOQA=kev2110/pybinver:v1.0
 VOLUMEN=v1:/var/
-RUTA=$(find / -name _data)
+RUTA=$(find / -type f \( -path '*/_data/prod.txt' -o -path '*/_data/qa.txt' \))
 
 docker volume create v1
 
