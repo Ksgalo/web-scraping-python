@@ -5,6 +5,8 @@ DOMINIOQA=kev2110/pybinver:v1.0
 VOLUMEN=v1:/var/
 RUTA=/var/lib/docker/volumes/v1/_data/
 
+docker volume create v1
+
 docker run --rm -v $VOLUMEN $DOMINIOPROD
 docker run --rm -v $VOLUMEN $DOMINIOQA
 
