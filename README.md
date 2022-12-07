@@ -15,3 +15,6 @@ Produccion
 QA
 /var/lib/docker/volumes/v1/_data/qa.txt
 
+Versiones 
+
+$HOME/binaps_version/
