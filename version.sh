@@ -8,6 +8,8 @@ RUTA=/var/lib/docker/volumes/v1/_data/
 docker run --rm -v $VOLUMEN $DOMINIOPROD
 docker run --rm -v $VOLUMEN $DOMINIOQA
 
-echo "Log version" > /home/binaps_version/`date +%Y%m%d`_logversion.txt
+mkdir -p $HOME/binaps_version/
 
-cd $RUTA && cat prodlog.txt qalog.txt > /home/binaps_version/`date +%Y%m%d`_logversion.txt
+echo "Log version" > $HOME/binaps_version/`date +%Y%m%d`_logversion.txt
+
+cd $RUTA && cat prodlog.txt qalog.txt > $HOME/binaps_version/`date +%Y%m%d`_logversion.txt
